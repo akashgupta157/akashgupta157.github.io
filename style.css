@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #17234D;
+}
+html{
+    font-size: 62.5%; 
+     /* 1rem = 10px */
+}
+button{
+    cursor: pointer;
+}
+#nav-menu{
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid;
+    padding: 1rem 5rem;
+}
+#nav-menu p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    cursor: pointer;
+}
+#btn{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 45%;
+}
+#btn button{
+    border: 0;
+    background:none;
+    font-size: 2rem;
+    color: white;
+    padding: 1rem;
+}
+#btn button:hover{
+    background-color: #19E8E2;
+    color: black;
+}
+
