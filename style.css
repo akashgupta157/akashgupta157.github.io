@@ -2,7 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #17234D;
+    font-family: 'League Spartan', sans-serif;
+    background-color: #32184B;
 }
 html{
     font-size: 62.5%; 
@@ -11,34 +12,44 @@ html{
 button{
     cursor: pointer;
 }
-#nav-menu{
+nav{
     display: flex;
     justify-content: space-between;
-    border: 2px solid;
-    padding: 1rem 5rem;
-}
-#nav-menu p{
-    display: flex;
-    justify-content: center;
+    font-size: 4rem;
     align-items: center;
-    font-size: 3rem;
-    cursor: pointer;
+    padding: 2rem 4rem;
 }
-#btn{
+nav.scroll{
+    background-color: #8843e4;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    -webkit-transition: all 0.5s ease-in;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+.nav.scroll{
+    background-color: #8843e4;
+    -webkit-transition: all 0.5s ease-in;
+}
+.nav{
     display: flex;
+    align-items: center;
+    width: 50%;
     justify-content: space-around;
-    align-items: center;
-    width: 45%;
 }
-#btn button{
+.nav button{
+    padding: 1.5rem;
+    font-size: 2.3rem;
+    background: none;
     border: 0;
-    background:none;
-    font-size: 2rem;
-    color: white;
-    padding: 1rem;
+    color: #ffe1e8;
 }
-#btn button:hover{
-    background-color: #19E8E2;
-    color: black;
-}
-
+.nav-link:hover {
+    box-shadow: inset 100px 0 0 0 #FF4779;
+  }
+.nav-link {
+    box-shadow: inset 0 0 0 0 #FF4779;
+    -webkit-transition: ease-out 0.4s;
+    -moz-transition: ease-out 0.4s;
+    transition: ease-out 0.4s;
+  }
