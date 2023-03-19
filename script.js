@@ -15,7 +15,10 @@ document.addEventListener('scroll',()=>{
         img.style.paddingTop="0px"
     }
 })
-
+function NewTab() {
+    window.open(
+    "Akash-Gupta-Resume.pdf", "_blank");
+}
 
 
 
