@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,6 +14,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Akash Gupta | Portfolio</title>
 </head>
+
 <body>
     <header>
         <nav id="nav-menu">
@@ -19,91 +22,154 @@
             <p id="akash"><a id="akash" href="#home">Akash</a></p>
             <div class="nav">
                 <a href="#home" class="nav-link home">Home</a>
-                <!-- <a href="" class="nav-link about">About</a> -->
-                <a href="#skill" class="nav-link skills">Skills</a>
-                <a href="" class="nav-link projects">Project</a>
+                <a href="#about" class="nav-link about">About</a>
+                <a href="#skills" class="nav-link skills">Skills</a>
+                <a href="#projects" class="nav-link projects">Project</a>
                 <a href="" class="nav-link contact">Contact</a>
-                <a href="Akash-Gupta-Resume.pdf" onclick="NewTab()" download="Aakash-Gupta-Resume" class="nav-link resume">Resume</a>
+                <a href="Akash-Gupta-Resume.pdf" onclick="NewTab()" download="Aakash-Gupta-Resume"
+                    class="nav-link resume">Resume</a>
             </div>
         </nav>
     </header>
     <div id="home">
-        <img src="./Rename-removebg-preview (1).png" class="home-img" alt="">
-        <div id="aname">
-            <main class="container">
-                <p id="user-detail-name">Hello 👋 I'm</p>
-                <section class="animation">
-                    <div class="first">
-                        <div>Akash Gupta</div>
-                    </div>
-                    <div class="second">
-                        <div>Full-Stack Web Developer</div>
-                    </div>
-                    <div class="third">
-                        <div>Software Engineer</div>
-                    </div>
-                </section>
-            </main>
-            <p id="user-detail-intro">A highly motivated and skilled web developer with a strong foundation in HTML, CSS and JavaScript. With a keen eye for detail and a passion for creating dynamic and responsive web applications, committed to continuous learning and growth in the industry.</p>
+        <img src="./coder-3462295-2895977.png" data-aos="fade-right" alt="">
+        <main class="container" data-aos="fade-left">
+            <p id="user-detail-name">Hello 👋 I'm</p>
+            <section class="animation">
+                <div class="first">
+                    <div>Akash Gupta</div>
+                </div>
+                <div class="second">
+                    <div>Web Developer</div>
+                </div>
+                <div class="third">
+                    <div>Software Engineer</div>
+                </div>
+            </section>
+    </div>
+    <div id="about" class="about section">
+        <h2 data-aos="fade-in">About</h2>
+        <div class="self">
+            <p data-aos="fade-left" id="user-detail-intro">"Hi, my name is Akash Gupta, and I’m a highly motivated and passionate web developer. I have a strong foundation in HTML, CSS, and JavaScript, and I’m proficient in developing responsive web pages and web applications. I’m adept at working with a team and collaborating with clients to deliver projects on time.<br>I gained hands-on experience with web development tools and technologies such as Git, Node.js, and React.<br> In addition to my technical skills, I have excellent communication, teamwork, and problem-solving skills. I’m excited to leverage my skills and knowledge to grow as a web developer and contribute to your team."</p>
+            <img data-aos="fade-right" class="home-img" src="./Rename-removebg-preview (1).png" alt="">
         </div>
     </div>
-    <div id="skill" style="padding-top: 100px;">
-        <p style="color:white;font-size:5rem;text-decoration:underline #a4161a .3rem;text-align: center;">Skills</p>
-        <div id="skills">
-            <div class="skills-card">
-                <img src="./pic/html.2ba4fabc69a89a8f71e6.png" class="skills-card-img" alt="">
-                <p class="skills-card-name">HTML</p>
-            </div>
-            <div class="skills-card">
-                <img src="./pic/css.69a82c2d9e45c933a9cb.png" class="skills-card-img" alt="">
-                <p class="skills-card-name">CSS</p>
-            </div>
-            <div class="skills-card">
-                <img src="./pic/javascript.1ccd6ef9bb1f9c84ef00.png" class="skills-card-img" alt="">
-                <p class="skills-card-name">JavaScript</p>
-            </div>
-            <div class="skills-card">
-                <img src="./pic/react.0cf951a69d8e58f83f9d.png" class="skills-card-img" alt="">
-                <p class="skills-card-name">React</p>
-            </div>
-            <div class="skills-card">
-                <img src="./pic/redux.b3b939c66aecf7d53967.png" class="skills-card-img" alt="">
-                <p class="skills-card-name">Redux</p>
-            </div>
-            <div class="skills-card">
-                <img src="./pic/material.5b2d8a0a309d9f7d47c1.png" class="skills-card-img" alt="">
-                <p class="skills-card-name">Material UI</p>
-            </div>
-            <div class="skills-card">
-                <img src="./pic/download.png" class="skills-card-img" alt="">
-                <p class="skills-card-name">TypeScript</p>
-            </div>
-            <div class="skills-card">
-                <img src="./pic/node.952a9ea986dcfa5229ad.png" class="skills-card-img" alt="">
-                <p class="skills-card-name">Node JS</p>
-            </div>
-            <div class="skills-card">
-                <img src="./pic/express.0aa4c9961ea99e3c9ad1.png" class="skills-card-img" alt="">
-                <p class="skills-card-name">Express JS</p>
-            </div>
-            <div class="skills-card">
-                <img src="./pic/mongo.2a1528ddc31d4ce8518d.png" class="skills-card-img" alt="">
-                <p class="skills-card-name">Mongo DB</p>
-            </div>
-            <div class="skills-card">
-                <img src="./pic/download (1).png" class="skills-card-img" alt="">
-                <p class="skills-card-name">Git</p>
-            </div>
-            <div class="skills-card">
-                <img src="./pic/github.3b9e32903aa89111875d.png" class="skills-card-img" alt="">
-                <p class="skills-card-name">Github</p>
-            </div>
+    <div id="skills">
+        <h2 data-aos="fade-in" >Skills and Tools</h2>
+        <div id="tech">
+            <div class="stack" data-aos="fade-left">
+        <div class="skills-card" >
+            <img src="./pic/html.2ba4fabc69a89a8f71e6.png"  class="skills-card-img"  alt="">
+            <p class="skills-card-name">HTML</p>
         </div>
+        <div class="skills-card" >
+            <img src="./pic/css.69a82c2d9e45c933a9cb.png"  class="skills-card-img"  alt="">
+            <p class="skills-card-name">CSS</p>
+        </div>
+        <div class="skills-card" >
+            <img src="./pic/javascript.1ccd6ef9bb1f9c84ef00.png"  class="skills-card-img"  alt="">
+            <p class="skills-card-name">JavaScript</p>
+        </div>
+        <div class="skills-card" >
+            <img src="./pic/react.0cf951a69d8e58f83f9d.png"  class="skills-card-img"  alt="">
+            <p class="skills-card-name">React JS</p>
+        </div>
+            </div>
+            <div class="stack" data-aos="fade-right">
+        <div class="skills-card" >
+            <img src="./pic/redux.b3b939c66aecf7d53967.png"  class="skills-card-img"  alt="">
+            <p class="skills-card-name">Redux</p>
+        </div>
+        <div class="skills-card" >
+            <img src="./pic/material.5b2d8a0a309d9f7d47c1.png"  class="skills-card-img"  alt="">
+            <p class="skills-card-name">Material UI</p>
+        </div>
+        <div class="skills-card" >
+            <img src="./pic/download.png"  class="skills-card-img"  alt="">
+            <p class="skills-card-name">TypeScript</p>
+        </div>
+        <div class="skills-card" >
+            <img src="./pic/node.952a9ea986dcfa5229ad.png"  class="skills-card-img"  alt="">
+            <p class="skills-card-name">Node JS</p>
+        </div>
+        </div>
+        <div class="stack" data-aos="fade-left">
+        <div class="skills-card" >
+            <img src="./pic/express.0aa4c9961ea99e3c9ad1.png"  class="skills-card-img"  alt="">
+            <p class="skills-card-name">Express JS</p>
+        </div>
+        <div class="skills-card" >
+            <img src="./pic/mongo.2a1528ddc31d4ce8518d.png"  class="skills-card-img"  alt="">
+            <p class="skills-card-name">Mongo DB</p>
+        </div>
+        <div class="skills-card">
+            <img src="./pic/download (1).png"  class="skills-card-img"  alt="">
+            <p class="skills-card-name">Git</p>
+        </div>
+        <div class="skills-card" >
+            <img src="./pic/GitHub-Mark-removebg-preview.png"  class="skills-card-img"  alt="">
+            <p class="skills-card-name">Github</p>
+        </div>
+        </div>
+    </div>
     </div>
     <div id="projects">
-
+        <h2 data-aos="fade-in">Projects & Work</h2>
+        <div style="padding-top: 5rem;">
+            <div class="project-card">
+                <div>
+                    <img data-aos="fade-left" src="./Screenshot (10).png" alt="">
+                </div>
+                <div data-aos="fade-right">
+                    <p class="project-title">HappyPatel.com</p>
+                    <p class="project-description">A flower and gift selling website is an online platform that offers a wide range of flowers, cakes, plants, personalized gifts and more. These websites promise midnight and same-day delivery in India with free shipping.</p>
+                    <div class="project-tech-stack"><div>React JS</div><div>CSS</div><div>Chakra UI</div></div>
+                    <div class="btn">
+                        <button class="project-github-link">Link</button>
+                        <button class="project-deployed-link">Github</button> 
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div>
+                    <img data-aos="fade-left" src="./Screenshot (10).png" alt="">
+                </div>
+                <div data-aos="fade-right">
+                    <p class="project-title">HappyPatel.com</p>
+                    <p class="project-description">A flower and gift selling website is an online platform that offers a wide range of flowers, cakes, plants, personalized gifts and more. These websites promise midnight and same-day delivery in India with free shipping.</p>
+                    <div class="project-tech-stack"><div>React JS</div><div>CSS</div><div>Chakra UI</div></div>
+                    <div class="btn">
+                        <button class="project-github-link">Link</button>
+                        <button class="project-deployed-link">Github</button> 
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div>
+                    <img data-aos="fade-left" src="./Screenshot (10).png" alt="">
+                </div>
+                <div data-aos="fade-right">
+                    <p class="project-title">HappyPatel.com</p>
+                    <p class="project-description">A flower and gift selling website is an online platform that offers a wide range of flowers, cakes, plants, personalized gifts and more. These websites promise midnight and same-day delivery in India with free shipping.</p>
+                    <div class="project-tech-stack"><div>React JS</div><div>CSS</div><div>Chakra UI</div></div>
+                    <div class="btn">
+                        <button class="project-github-link">Link</button>
+                        <button class="project-deployed-link">Github</button> 
+                    </div>
+                </div>
+            </div>
+        </div>        
     </div>
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    </body>
+</body>
 </html>
 <script src="./script.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init(
+        {
+            offset: 0,
+            duration: 1000
+        }
+    );
+</script>
