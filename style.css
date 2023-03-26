@@ -3,73 +3,64 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "League Spartan", sans-serif;
-  /* background-color: #edf2f4; */
 }
 html {
   font-size: 62.5%;
-  /* 1rem = 10px */
   scroll-behavior: smooth;
-}
-button {
-  cursor: pointer;
 }
 nav {
   display: flex;
-  justify-content: space-between;
-  font-size: 4rem;
   align-items: center;
-  padding: 2rem 4rem;
-  position:fixed;
+  justify-content: space-between;
+  padding: 2rem;
+  background-color: #1b1b1b;
+  position: sticky;
   top: 0;
-  width: 100%;
   z-index: 100;
-  border: 1px solid red;
 }
-nav.scroll,
-.nav.scroll {
-  /* background-color: #2b2d42; */
-  -webkit-transition: all 0.5s ease-in;
+nav p {
+  font-size: 40px;
+  font-weight: bolder;
+  color: white;
 }
 .nav {
+  width: 65%;
   display: flex;
-  align-items: center;
-  width: 50%;
   justify-content: space-around;
 }
-#akash {
-  display: flex;
-  align-items: center;
-  background: transparent;
+nav a {
   text-decoration: none;
+  font-size: 2.5rem;
+  color: white;
 }
-.nav a {
-  padding: 1.5rem;
-  font-size: 2.3rem;
-  background: none;
-  border: 0;
-  /* color: #8d99ae; */
-  text-decoration: none;
-}
-.nav-link:hover {
-  /* box-shadow: inset 10rem 0 0 0 #d90429; */
-}
-.nav-link {
-  /* box-shadow: inset 0 0 0 0 #d90429; */
-  -webkit-transition: ease-out 0.4s;
-  -moz-transition: ease-out 0.4s;
-  transition: ease-out 0.4s;
+.hb {
+  display: none;
 }
 #home {
-  /* padding-top: 10rem; */
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  height: 100vh;
+  overflow: hidden;
+  transition: 0.5s ease-in-out;
+  height: 87vh;
+}
+#home img {
+  animation: float 4s ease-in-out infinite;
+}
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-20px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
 }
 .container {
   font-size: 9rem;
   width: max-content;
-  z-index: 1;
 }
 .animation {
   height: 9rem;
@@ -77,9 +68,9 @@ nav.scroll,
 }
 .animation > div > div {
   color: white;
-  padding: 0.5rem 0.2rem;
+  padding: 1rem 1rem 1rem 1rem;
   text-align: center;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   display: inline-block;
 }
 .animation div:first-child {
@@ -102,22 +93,22 @@ nav.scroll,
     margin-top: 0;
   }
   20% {
-    margin-top: -9.2rem;
+    margin-top: -10rem;
   }
   30% {
-    margin-top: -9.2rem;
+    margin-top: -10rem;
   }
   40% {
-    margin-top: -19.1rem;
+    margin-top: -22rem;
   }
   60% {
-    margin-top: -19.1rem;
+    margin-top: -22rem;
   }
   70% {
-    margin-top: -9.2rem;
+    margin-top: -10rem;
   }
   80% {
-    margin-top: -9.2rem;
+    margin-top: -10rem;
   }
   90% {
     margin-top: 0;
@@ -126,160 +117,60 @@ nav.scroll,
     margin-top: 0;
   }
 }
-#about {  
-  padding-top:12rem;
-  overflow: hidden;
-  height: 100vh;
+@media (max-width: 600px) {
+  html {
+    font-size: 100%;
+  }
+  #home {
+    flex-direction: column;
+    justify-content:center;
+    margin: auto;
+    border: 1px solid red;
+    text-align: center;
+  }
+  .container {
+    font-size: 9rem;
+    width: max-content;
+  }
+  .animation {
+    height: 9rem;
+    overflow: hidden;
+  }
+  .animation > div > div {
+    color: white;
+    padding: 1rem 1rem 1rem 1rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    display: inline-block;
+  }
+  #home img {
+   width: 50rem;
+  }
 }
-.self {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+@media (max-width: 768px) {
+  html {
+    font-size: 50%;
+  }
+  .nav {
+    position: fixed;
+    top: 9rem;
+    background-color: red;
+    width: 100%;
+    left: -100%;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 2rem;
+    gap: 4rem;
+    align-items: center;
+    transition: all 0.3s ease;
+  }
+  .hb {
+    width: 5rem;
+    display: block;
+  }
+  #click:checked ~ .nav {
+    left: 0;
+    transition: all 0.3s ease;
+  }
 }
-.self p {
-  text-align: justify;
-  width: 50%;
-  font-size: 2.5rem;
-}
-#about h2,#skills h2,#projects h2,#contact h2{
-  text-align: center;
-  font-size: 5rem;
-}
-#skills{
-  padding-top:10rem;
-  overflow: hidden;
-}
-#tech{
-  padding-top:5rem;
-  margin: auto;
-  display: grid;
-  grid-template-columns: repeat(4,1fr);
-}
-.skills-card{
-  padding: 1rem;
-  font-size: 4rem;
-}
-.skills-card-name{
-  text-align: center;
-}
-.skills-card-img{
-  padding: 1rem;
-  width: 40%;
-  margin:auto;
-  display: block;
-}
-#projects{
-  padding-top:10rem;
-  overflow: hidden;
-}
-.project-card{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin: auto;
-  padding:4rem;
-  gap: 5rem;
-}
-.project-card img{
-  margin: auto;
-  display: block;
-  height: 55vh;
-}
-.project-description{
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  font-size: 3rem;
-  text-align: justify;
-}
-.project-title{
-  font-size: 4rem;
-  text-align: justify;
-}
-.project-tech-stack{
- display: flex;
- gap: 1rem;
-}
-.project-tech-stack div{
- padding: 1rem;
- font-size: 2rem;
- background-color: #c10528;
- border-radius: 5px;
- color: white;
-}
-.btn button {
-  padding: 1rem;
- font-size: 2rem;
- background-color: #c10528;
- border-radius: 5px;
- color: white;
- margin-top: 2rem;
-}
-
-/* .wrapper {
-  width: 100%;
-  height: 100vh;
-} */
-:root {
-  --link-size: 6.4rem;
-  --trans-props: all 0.3s ease;
-}
-.wrapper,
-.social-icons {
-  
-}
-.social-icon {
-  display: flex;
-  position: relative;
-  overflow: hidden; 
-  width: var(--link-size);
-  height: var(--link-size);
-  margin: 8px;
-  background-color: white;
-  border-radius: 50%;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12);
-  text-decoration: none;
-  transition: var(--trans-props);
-}
-.social-icon i {
-  margin: auto; 
-  font-size: 2.4rem;
-  color: hsl(212, 16%, 48%);
-  z-index: 1; 
-  transition: var(--trans-props);
-}
-.social-icon:after {
-  content: "";
-  width: var(--link-size);
-  height: var(--link-size);
-  position: absolute;
-  transform: translate(0, var(--link-size));
-  border-radius: 50%;
-  transition: var(--trans-props);
-}
-.social-icon.twitter:after {
-  background-color: #0c64c5;
-}
-.social-icon.github:after {
-  background-color: #24292e;
-}
-.social-icon.instagram:after {
-  background-image: linear-gradient(
-    to bottom left,
-    #4f5bd5,
-    #962fbf,
-    #d62976,
-    #fa7e1e,
-    #feda75
-  );
-}
-.social-icon:hover {
-  transform: translateY(-4px);
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.16);
-}
-.social-icon:hover i {
-  color: #fff;
-}
-.social-icon:hover:after {
-  transform: translate(0) scale(1.2);
-}
-
