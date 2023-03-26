@@ -119,21 +119,22 @@ nav a {
 }
 @media (max-width: 600px) {
   html {
-    font-size: 100%;
+    font-size:10%;
   }
   #home {
     flex-direction: column;
-    justify-content:center;
+    justify-content:flex-start;
     margin: auto;
     border: 1px solid red;
     text-align: center;
+    padding: 5rem;
   }
   .container {
-    font-size: 9rem;
+    font-size: 6rem;
     width: max-content;
   }
   .animation {
-    height: 9rem;
+    height: 6rem;
     overflow: hidden;
   }
   .animation > div > div {
@@ -142,6 +143,38 @@ nav a {
     text-align: center;
     margin-bottom: 2rem;
     display: inline-block;
+  }
+  @keyframes text-animation {
+    0% {
+      margin-top: 0;
+    }
+    10% {
+      margin-top: 0;
+    }
+    20% {
+      margin-top: -8rem;
+    }
+    30% {
+      margin-top: -8rem;
+    }
+    40% {
+      margin-top: -16.5rem;
+    }
+    60% {
+      margin-top: -16.5rem;
+    }
+    70% {
+      margin-top: -8rem;
+    }
+    80% {
+      margin-top: -8rem;
+    }
+    90% {
+      margin-top: 0;
+    }
+    100% {
+      margin-top: 0;
+    }
   }
   #home img {
    width: 50rem;
