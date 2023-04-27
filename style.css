@@ -4,6 +4,11 @@
   box-sizing: border-box;
   font-family: "Arvo", serif;
   font-size: 62.5%;
+  scroll-behavior: smooth;
+  -webkit-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
 }
 #body {
   background-image: url(./pic/Sea\ of\ Clouds-2.9s-1504px.png);
@@ -12,8 +17,11 @@
   height: 100vh;
 }
 #nav-menu {
-  /* border: 1px solid red; */
   height: 70px;
+  position: fixed;
+  width: 100%;
+  transition: background-color 0.2s ease-out;
+  z-index: 10;
 }
 .nav-list {
   /* border: 1px solid; */
@@ -44,8 +52,9 @@
 #hbc {
   display: none;
 }
-#home{
+#home {
   text-align: center;
+  padding-top: 70px;
 }
 #user-detail-name {
   font-size: 150px;
@@ -62,9 +71,9 @@
   padding-top: 1%;
   color: #030c33;
 }
-#resume-link-2 button{
-  text-decoration:none;
-  font-size:22px;
+#resume-link-2 button {
+  text-decoration: none;
+  font-size: 22px;
   margin-top: 20px;
   padding: 5px;
   border-radius: 5px;
@@ -73,6 +82,48 @@
   color: white;
   font-size: 20px;
   font-weight: 600;
+}
+#about,#skills {
+  height: 100vh;
+  padding: 80px 80px 0 80px;
+}
+#about img {
+  border-radius: 50%;
+}
+#about h2,#skills h2 {
+  text-align: center;
+  font-size: 50px;
+}
+#about div {
+  display: flex;
+  align-items: center;
+  margin-top: 5%;
+}
+#about p {
+  font-size: 20px;
+  text-align: justify;
+}
+#about i {
+  font-size: 18px;
+  text-align: justify;
+  padding-top: 10px;
+}
+.skill-card-group {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  margin-top: 30px;
+}
+.skills-card img{
+  width: 50%;
+  display: block;
+  margin: auto;
+  padding-bottom: 10px;
+}
+.skills-card h3{
+  text-align: center;
+  font-size: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 /* Media queries for laptop */
 @media screen and (max-width: 1024px) {
@@ -148,6 +199,9 @@
 
 /* Media queries for mobile */
 @media screen and (max-width: 480px) {
+  #body {
+    height: 60vh;
+  }
   .nav-list {
     height: 40vh;
   }
@@ -162,5 +216,32 @@
     margin: auto;
     padding-top: 5%;
     color: #030c33;
+  }
+  #about {
+    height: 100vh;
+    padding: 20px;
+  }
+  #about img {
+    display: block;
+    margin: auto;
+    width: 70%;
+    padding-bottom: 30px;
+    padding-top: 30px;
+  }
+  #about h2 {
+    text-align: center;
+    font-size: 30px;
+  }
+  #about div {
+    flex-direction: column;
+  }
+  #about p {
+    font-size: 16px;
+    text-align: justify;
+  }
+  #about i {
+    font-size: 12px;
+    text-align: justify;
+    padding-top: 10px;
   }
 }
