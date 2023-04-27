@@ -5,8 +5,14 @@
   font-family: "Arvo", serif;
   font-size: 62.5%;
 }
+#body {
+  background-image: url(./pic/Sea\ of\ Clouds-2.9s-1504px.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
 #nav-menu {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   height: 70px;
 }
 .nav-list {
@@ -23,15 +29,70 @@
   text-decoration: none;
   font-size: 2rem;
   font-weight: 500;
-  color: black;
+  box-shadow: inset 0 0 0 0 #030c33;
+  margin: 0 -0.25rem;
+  padding: 0 0.25rem;
+  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  color: white;
+  padding: 5px;
 }
-#hbo,#hbc {
+.nav-link:hover {
+  box-shadow: inset 100px 0 0 0 #030c33;
+  color: white;
+}
+#hbo,
+#hbc {
   display: none;
+}
+#home{
+  text-align: center;
+}
+#user-detail-name {
+  font-size: 150px;
+  text-align: center;
+  width: 50%;
+  margin: auto;
+  padding-top: 2%;
+  color: white;
+}
+#user-detail-intro {
+  font-size: 50px;
+  text-align: center;
+  margin: auto;
+  padding-top: 1%;
+  color: #030c33;
+}
+#resume-link-2 button{
+  text-decoration:none;
+  font-size:22px;
+  margin-top: 20px;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  background-color: orange;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
 }
 /* Media queries for laptop */
 @media screen and (max-width: 1024px) {
   .nav-list {
     width: 60%;
+  }
+  #user-detail-name {
+    font-size: 150px;
+    text-align: center;
+    width: 55%;
+    margin: auto;
+    padding-top: 2%;
+    color: white;
+  }
+  #user-detail-intro {
+    font-size: 50px;
+    text-align: center;
+    margin: auto;
+    padding-top: 1%;
+    color: #030c33;
   }
 }
 
@@ -40,7 +101,7 @@
   .nav-list {
     position: fixed;
     top: 5.5rem;
-    background-color: red;
+    background-color: #030c33;
     width: 200px;
     right: -100%;
     height: 45vh;
@@ -71,11 +132,35 @@
     right: 0;
     transition: all 0.3s ease;
   }
+  #user-detail-name {
+    font-size: 130px;
+    width: 80%;
+    padding-top: 5%;
+  }
+  #user-detail-intro {
+    font-size: 30px;
+    text-align: center;
+    margin: auto;
+    padding-top: 5%;
+    color: #030c33;
+  }
 }
 
 /* Media queries for mobile */
 @media screen and (max-width: 480px) {
   .nav-list {
     height: 40vh;
+  }
+  #user-detail-name {
+    font-size: 90px;
+    width: 100%;
+    padding-top: 5%;
+  }
+  #user-detail-intro {
+    font-size: 20px;
+    text-align: center;
+    margin: auto;
+    padding-top: 5%;
+    color: #030c33;
   }
 }
