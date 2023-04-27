@@ -6,7 +6,7 @@
   font-size: 62.5%;
 }
 #nav-menu {
-  /* border: 1px solid red; */
+  border: 1px solid red;
   height: 70px;
 }
 .nav-list {
@@ -23,9 +23,9 @@
   text-decoration: none;
   font-size: 2rem;
   font-weight: 500;
-  color: white;
+  color: black;
 }
-#hb {
+#hbo,#hbc {
   display: none;
 }
 /* Media queries for laptop */
