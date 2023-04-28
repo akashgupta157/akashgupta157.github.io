@@ -24,7 +24,6 @@ body {
   z-index: 10;
 }
 .nav-list {
-  /* border: 1px solid; */
   display: flex;
   width: 55%;
   justify-content: space-around;
@@ -84,7 +83,8 @@ body {
   font-weight: 600;
 }
 #about,
-#skills {
+#skills,
+#projects {
   height: 100vh;
   padding: 80px 80px 0 80px;
 }
@@ -92,7 +92,8 @@ body {
   border-radius: 50%;
 }
 #about h2,
-#skills h2 {
+#skills h2,
+#projects h2 {
   text-align: center;
   font-size: 50px;
 }
@@ -101,7 +102,7 @@ body {
   margin-top: 5%;
   gap: 50px;
 }
-#about div div{
+#about div div {
   width: 50%;
 }
 #about p {
@@ -112,13 +113,76 @@ body {
   font-size: 18px;
   text-align: justify;
 }
-#contact {
-  border: 1px solid red;
+#cardGroup {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+#skills {
+  height: 100vh;
+}
+.skills-card-img {
+  margin: auto;
+  display: block;
+  width: 50%;
+  padding-top: 20px;
+}
+.skills-card-name {
+  text-align: center;
+  padding: 20px;
+  font-size: 30px;
+}
+#projects{
+  margin-top: 15%;
+}
+#projectDes {
+  width: 50%;
+}
+.project-card {
   display: flex;
   justify-content: space-between;
-  padding: 80px;
+  padding-top: 50px;
+  text-align: justify;
 }
-#c1{
+.project-card h3 {
+  text-align: center;
+  font-size: 30px;
+}
+.project-description {
+  padding-top: 5px;
+  font-size: 20px;
+}
+.project-tech-stack {
+  padding-top: 10px;
+  font-size: 18px;
+}
+.project-tech-stack b {
+  font-size: 20px;
+}
+.project-github-link,
+.project-deployed-link {
+  padding: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 18px;
+  margin-top: 10px;
+  margin-right: 20px;
+  border-radius: 50px;
+  border: 0;
+  font-weight: 600;
+  color: white;
+  background-color: orange;
+}
+.fa-arrow-up-right-from-square{
+  font-size: 15px;
+}
+#contact {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 80px 30px 80px;
+  margin-top: 60%;
+  background-color: #dde4fb;
+}
+#c1 {
   padding-top: 100px;
 }
 #c1 h2 {
@@ -138,21 +202,21 @@ body {
   margin-right: 15px;
   cursor: pointer;
   margin-top: 5px;
-  transition: .4s;
+  transition: 0.4s;
   color: black;
 }
 .icon i:hover {
   transform: rotate(0deg) skew(0deg) translate(0, -10px);
 }
-#c2{
+#c2 {
   padding-top: 60px;
 }
-#c2 form{
+#c2 form {
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
-#c2 form input{
+#c2 form input {
   width: 300px;
   height: 60px;
   font-size: 20px;
@@ -160,14 +224,14 @@ body {
   border-radius: 10px;
   border: 2px solid #030c33;
 }
-#c2 form textarea{
+#c2 form textarea {
   font-size: 20px;
   padding-left: 5px;
   padding-top: 10px;
   border-radius: 10px;
   border: 2px solid #030c33;
 }
-#c2 form button{
+#c2 form button {
   width: 50%;
   margin: auto;
   height: 40px;
