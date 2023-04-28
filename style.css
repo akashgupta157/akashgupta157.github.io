@@ -90,6 +90,7 @@ body {
 }
 #about img {
   border-radius: 50%;
+  width: 40%;
 }
 #about h2,
 #skills h2,
@@ -250,7 +251,7 @@ body {
   cursor: pointer;
 }
 /* Media queries for laptop */
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 769px) and (max-width: 1024px) {
   .nav-list {
     width: 60%;
   }
@@ -269,8 +270,37 @@ body {
     padding-top: 1%;
     color: #030c33;
   }
+  #about,
+  #skills,
+  #projects {
+    height: 100vh;
+    padding: 80px 60px 0 60px;
+  }
+  #about img {
+    width: 40%;
+    height: 40%;
+  }
+  #about div {
+    align-items: center;
+  }
+  #about div div {
+    width: 100%;
+  }
+  .project-card img {
+    width: 45%;
+    object-fit:scale-down;
+  }
+  #contact{
+    margin-top: 100%;
+    padding: 80px 60px 30px 60px;
+  }
+  #c2 {
+    padding-top: 0px;
+  }
+  #c1 {
+    padding-top:10px;
+  }
 }
-
 /* Media queries for tablet */
 @media screen and (max-width: 768px) {
   .nav-list {
@@ -343,7 +373,8 @@ body {
   }
   #about,
   #skills,
-  #projects,#contact {
+  #projects,
+  #contact {
     height: fit-content;
     padding: 20px;
   }
