@@ -14,54 +14,63 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
-<body>
-    <section id="body">
-        <nav id="nav-menu">
-            <input type="checkbox" name="" id="click" style="display: none;">
-            <label for="click">
-                <img id="hbo"
-                    src="https://d33wubrfki0l68.cloudfront.net/79e75114856ae61628d2ad26504e3ff4ab2c71b6/f06a4/assets/svg/ham-menu.svg"
-                    alt="">
-                <img id="hbc"
-                    src="https://d33wubrfki0l68.cloudfront.net/de2a681c8ca1630b29949b3a34bf158a686a0554/6a0ec/assets/svg/ham-menu-close.svg"
-                    alt="">
-            </label>
-            <ul class="nav-list">
-                <li class="nav-item">
-                    <a href="#home" class="nav-link home">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#about" class="nav-link about">About</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#skills" class="nav-link skills">Skills</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#projects" class="nav-link projects">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#contact" class="nav-link contact">Contact</a>
-                </li>
-                <li class="nav-item">
-                    <a href="./Akash-Gupta-Resume.pdf" onclick="NewTab()" target="_blank" download="Aakash-Gupta-Resume"
-                        id="resume-link-1" class="nav-link resume">Resume</a>
-                </li>
-            </ul>
-        </nav>
-        <section id="home">
+<body id="body">
+    <nav id="nav-menu">
+        <input type="checkbox" name="" id="click" style="display: none;">
+        <label for="click">
+            <img id="hbo"
+                src="https://d33wubrfki0l68.cloudfront.net/79e75114856ae61628d2ad26504e3ff4ab2c71b6/f06a4/assets/svg/ham-menu.svg"
+                alt="">
+            <img id="hbc"
+                src="https://d33wubrfki0l68.cloudfront.net/de2a681c8ca1630b29949b3a34bf158a686a0554/6a0ec/assets/svg/ham-menu-close.svg"
+                alt="">
+        </label>
+        <ul class="nav-list">
+            <li class="nav-item">
+                <a href="#home" class="nav-link home">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="#about" class="nav-link about">About</a>
+            </li>
+            <li class="nav-item">
+                <a href="#skills" class="nav-link skills">Skills</a>
+            </li>
+            <li class="nav-item">
+                <a href="#projects" class="nav-link projects">Projects</a>
+            </li>
+            <li class="nav-item">
+                <a href="#contact" class="nav-link contact">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a href="./Akash-Gupta-Resume.pdf" onclick="NewTab()" target="_blank" download="Aakash-Gupta-Resume"
+                    id="resume-link-1" class="nav-link resume">Resume</a>
+            </li>
+        </ul>
+    </nav>
+    <section id="home">
+        <div>
+            <span>Hello I'm</span>
             <h1 id="user-detail-name">Akash Gupta</h1>
-            <p id="user-detail-intro">Full-Stack Web Developer</p>
-            <a href="./Akash-Gupta-Resume.pdf" onclick="NewTab()" target="_blank" download="Aakash-Gupta-Resume"
-                id="resume-link-2"><button id="resume-button-2">Resume</button></a>
-        </section>
+            <p id="user-detail-intro">A Full-Stack Web Developer</p>
+            <section>
+                <a style="text-decoration: none;" href="./Akash-Gupta-Resume.pdf" onclick="NewTab()" target="_blank"
+                    download="Aakash-Gupta-Resume" id="resume-link-2"><button id="resume-button-2"><i
+                            class="fa-solid fa-file"></i>Download Resume</button></a>
+                <a href="#contact"><button>Get a free quote</button></a>
+            </section>
+
+        </div>
+        <img src="./pic/5625514.png" alt="">
     </section>
     <section id="about" class="about section">
         <h2>About Me</h2>
         <div>
-            <img src="./pic/Rename-removebg-preview (1).png" alt="Professional Photo" class="home-img">
-            <div style="flex-direction: column;">
+            <img data-aos="fade-right" data-aos-duration="1000" src="./pic/Rename-removebg-preview (1).png"
+                alt="Professional Photo" class="home-img">
+            <div>
                 <p>An enthusiastic and performance-driven web
                     developer with a superb work ethic. Broadly and deeply
                     knowledgeable in a wide variety of computer
@@ -75,53 +84,53 @@
         </div>
     </section>
     <div id="skills">
-        <h2>Skills and Tools</h2>
+        <h2>Skills</h2>
         <div id="cardGroup">
-            <div class="skills-card">
+            <div id="html" data-aos="fade-left" class="skills-card">
                 <img src="./pic/html.2ba4fabc69a89a8f71e6.png" class="skills-card-img" alt="">
                 <h3 class="skills-card-name">HTML</h3>
             </div>
-            <div class="skills-card">
+            <div id="css" data-aos="fade-left" class="skills-card">
                 <img src="./pic/css.69a82c2d9e45c933a9cb.png" class="skills-card-img" alt="">
                 <h3 class="skills-card-name">CSS</h3>
             </div>
-            <div class="skills-card">
+            <div id="js" data-aos="fade-left" class="skills-card">
                 <img src="./pic/javascript.1ccd6ef9bb1f9c84ef00.png" class="skills-card-img" alt="">
                 <h3 class="skills-card-name">JavaScript</h3>
             </div>
-            <div class="skills-card">
+            <div id="react" data-aos="fade-left" class="skills-card">
                 <img src="./pic/react.0cf951a69d8e58f83f9d.png" class="skills-card-img" alt="">
                 <h3 class="skills-card-name">React</h3>
             </div>
-            <div class="skills-card">
+            <div id="redux" data-aos="fade-right" class="skills-card">
                 <img src="./pic/redux.b3b939c66aecf7d53967.png" class="skills-card-img" alt="">
                 <h3 class="skills-card-name">Redux</h3>
             </div>
-            <div class="skills-card">
+            <div id="ts" data-aos="fade-right" class="skills-card">
                 <img src="./pic/typesript.png" class="skills-card-img" alt="">
                 <h3 class="skills-card-name">Typescript</h3>
             </div>
-            <div class="skills-card">
+            <div id="mui" data-aos="fade-right" class="skills-card">
                 <img src="./pic/material.5b2d8a0a309d9f7d47c1.png" class="skills-card-img" alt="">
                 <h3 class="skills-card-name">Material UI</h3>
             </div>
-            <div class="skills-card">
+            <div id="njs" data-aos="fade-right" class="skills-card">
                 <img src="./pic/node.952a9ea986dcfa5229ad.png" class="skills-card-img" alt="">
                 <h3 class="skills-card-name">Node JS</h3>
             </div>
-            <div class="skills-card">
+            <div id="ejs" data-aos="fade-left" class="skills-card">
                 <img src="./pic/express.0aa4c9961ea99e3c9ad1.png" class="skills-card-img" alt="">
                 <h3 class="skills-card-name">Express JS</h3>
             </div>
-            <div class="skills-card">
+            <div id="mdb" data-aos="fade-left" class="skills-card">
                 <img src="./pic/mongo.2a1528ddc31d4ce8518d.png" class="skills-card-img" alt="">
                 <h3 class="skills-card-name">Mongo DB</h3>
             </div>
-            <div class="skills-card">
+            <div id="git" data-aos="fade-left" class="skills-card">
                 <img src="./pic/git.png" class="skills-card-img" alt="">
                 <h3 class="skills-card-name">Git</h3>
             </div>
-            <div class="skills-card">
+            <div id="github" data-aos="fade-left" class="skills-card">
                 <img src="./pic/GitHub-Mark-removebg-preview.png" class="skills-card-img" alt="">
                 <h3 class="skills-card-name">Github</h3>
             </div>
@@ -129,7 +138,7 @@
     </div>
     <section id="projects">
         <h2>My Projects</h2>
-        <div class="project-card">
+        <div data-aos="fade-left" class="project-card">
             <img src="./pic/Screenshot (10).png" alt="">
             <div id="projectDes">
                 <h3 class="project-title">Title</h3>
@@ -138,16 +147,16 @@
                     ipsum dolor sit amet, consectetur adipisicing elit. Magnam fuga sequi mollitia illo quos architecto
                     tempore iusto distinctio labore nisi!</p>
                 <p class="project-tech-stack"><b>Tech-Stack:</b> Lorem ipsum dolor sit amet consectetur</p>
-                <div style="display: flex;">
-                <a href=""><button class="project-github-link">Source Code</button></a>
-                <a href="" style="text-decoration: none;"><button style="display: flex;align-items: center;gap: 10px;"
-                        class="project-deployed-link">Live<i
-                            class="fa-solid fa-arrow-up-right-from-square"></i></button></a></div>
+                <div>
+                    <a href=""><button class="project-github-link">Source Code</button></a>
+                    <a href=""><button class="project-deployed-link"
+                        style="display: flex;gap: 10px;align-items: center;">Live<i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></button></a>
+                </div>
 
             </div>
         </div>
-        <div class="project-card">
-            <img src="./pic/Screenshot (10).png" width="40%px" alt="">
+        <div data-aos="fade-right" class="project-card">
             <div id="projectDes">
                 <h3 class="project-title">Title</h3>
                 <p class="project-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -155,16 +164,18 @@
                     ipsum dolor sit amet, consectetur adipisicing elit. Magnam fuga sequi mollitia illo quos architecto
                     tempore iusto distinctio labore nisi!</p>
                 <p class="project-tech-stack"><b>Tech-Stack:</b> Lorem ipsum dolor sit amet consectetur</p>
-                <div style="display: flex;">
-                <a href=""><button class="project-github-link">Source Code</button></a>
-                <a href="" style="text-decoration: none;"><button style="display: flex;align-items: center;gap: 10px;"
-                        class="project-deployed-link">Live<i
-                            class="fa-solid fa-arrow-up-right-from-square"></i></button></a></div>
+                <div>
+                    <a href=""><button class="project-github-link">Source Code</button></a>
+                    <a href=""><button class="project-deployed-link"
+                        style="display: flex;gap: 10px;align-items: center;">Live<i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></button></a>
+                </div>
 
             </div>
+            <img src="./pic/Screenshot (10).png" alt="">
         </div>
-        <div class="project-card">
-            <img src="./pic/Screenshot (10).png" width="40%px" alt="">
+        <div data-aos="fade-left" class="project-card">
+            <img src="./pic/Screenshot (10).png" alt="">
             <div id="projectDes">
                 <h3 class="project-title">Title</h3>
                 <p class="project-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -172,16 +183,16 @@
                     ipsum dolor sit amet, consectetur adipisicing elit. Magnam fuga sequi mollitia illo quos architecto
                     tempore iusto distinctio labore nisi!</p>
                 <p class="project-tech-stack"><b>Tech-Stack:</b> Lorem ipsum dolor sit amet consectetur</p>
-                <div style="display: flex;">
-                <a href=""><button class="project-github-link">Source Code</button></a>
-                <a href="" style="text-decoration: none;"><button style="display: flex;align-items: center;gap: 10px;"
-                        class="project-deployed-link">Live<i
-                            class="fa-solid fa-arrow-up-right-from-square"></i></button></a></div>
+                <div>
+                    <a href=""><button class="project-github-link">Source Code</button></a>
+                    <a href=""><button class="project-deployed-link"
+                        style="display: flex;gap: 10px;align-items: center;">Live<i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></button></a>
+                </div>
 
             </div>
         </div>
-        <div class="project-card">
-            <img src="./pic/Screenshot (10).png" width="40%px" alt="">
+        <div data-aos="fade-right" class="project-card">
             <div id="projectDes">
                 <h3 class="project-title">Title</h3>
                 <p class="project-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -189,13 +200,13 @@
                     ipsum dolor sit amet, consectetur adipisicing elit. Magnam fuga sequi mollitia illo quos architecto
                     tempore iusto distinctio labore nisi!</p>
                 <p class="project-tech-stack"><b>Tech-Stack:</b> Lorem ipsum dolor sit amet consectetur</p>
-                <div style="display: flex;">
-                <a href=""><button class="project-github-link">Source Code</button></a>
-                <a href="" style="text-decoration: none;"><button style="display: flex;align-items: center;gap: 10px;"
-                        class="project-deployed-link">Live<i
-                            class="fa-solid fa-arrow-up-right-from-square"></i></button></a></div>
-
+                <div>
+                    <a href=""><button class="project-github-link">Source Code</button></a>
+                    <a href=""><button class="project-deployed-link" style="display: flex;gap: 10px;align-items: center;">Live<i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></button></a>
+                </div>
             </div>
+            <img src="./pic/Screenshot (10).png" alt="">
         </div>
     </section>
     <footer id="contact" class="contact section">
@@ -212,6 +223,8 @@
                     <a id="contact-linkedin" target="_blank" href="https://www.linkedin.com/in/akash04-gupta04/"><i
                             class="fa-brands fa-linkedin"></i></a>
                     <a target="_blank" href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                    <a target="_blank" href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                    <a target="_blank" href="https://www.twitter.com/"><i class="fa-brands fa-twitter"></i></a>
                 </div>
             </div>
         </div>
@@ -227,4 +240,13 @@
 </body>
 
 </html>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init(
+        {
+            offset: 10,
+            duration: 2000
+        }
+    );
+</script>
 <script src="./script.js"></script>
