@@ -15,10 +15,6 @@
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin=anonymous referrerpolicy=no-referrer />
     <link href=https://unpkg.com/aos@2.3.1/dist/aos.css rel=stylesheet>
-    <link
-   rel="stylesheet"
-   href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
-/>
 </head>
 
 <body id=body>
@@ -213,10 +209,10 @@
             <img src="./pic/Screenshot (10).png" alt>
         </div>
     </section>
-    <div class="calendar react-activity-calendar">
-        <!-- Loading stuff -->
-        Loading the data just for you.
-    </div>
+    <p class="react-activity-calendar"></p>
+    <p id="github-streak-stats"></p>
+    <p id="github-top-langs"></p>
+    <p id="github-stats-card"></p>
     <footer id=contact class="contact section">
         <div id=c1>
             <h2>Contact Me</h2>
@@ -251,8 +247,3 @@
 <script src=https://unpkg.com/aos@next/dist/aos.js></script>
 <script>AOS.init({ offset: 10, duration: 2000 });</script>
 <script src=./script.js></script>
-<script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
-<script>
-    GitHubCalendar(".calendar", 'akashgupta157', { responsive: true });
-</script>
-           
