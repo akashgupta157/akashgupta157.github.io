@@ -217,10 +217,11 @@ button {
 }
 .project-card {
   justify-content: space-between;
-  padding-top: 70px;
-}
-.project-card:nth-child(2) {
-  padding-top: 30px;
+  padding: 35px 15px;
+  margin-top: 20px;
+  &:hover {
+    /* background-color: #505e7d; */
+  }
 }
 .project-card h3 {
   text-align: center;
@@ -326,6 +327,10 @@ button {
   }
   .nav-list a {
     font-size: large;
+  }
+  .project-card{
+    padding: 30px 10px;
+    border: 1px solid red;
   }
   .project-card img {
     object-fit: contain;
@@ -434,6 +439,7 @@ button {
   .project-card {
     flex-direction: column;
     justify-content: space-between;
+    padding: 0px;
     padding-top: 20px;
     text-align: justify;
   }
@@ -544,6 +550,10 @@ button {
   }
   .project-card img {
     width: 90%;
+  }
+  .project-title {
+    display: flex;
+    flex-direction: column;
   }
   #c1 {
     padding-top: 10px;
