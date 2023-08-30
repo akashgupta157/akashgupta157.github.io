@@ -40,10 +40,11 @@ button {
   background: #f1f1f1;
 }
 ::-webkit-scrollbar-thumb {
-  background: #888;
+  background: #005aa7;
+  border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  background: #0163b8;
 }
 #nav-menu {
   height: 70px;
@@ -328,7 +329,7 @@ button {
   .nav-list a {
     font-size: large;
   }
-  .project-card{
+  .project-card {
     padding: 30px 10px;
     border: 1px solid red;
   }
