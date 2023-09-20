@@ -175,10 +175,6 @@ button {
 }
 #about img {
   width: 35%;
-  background-image: url(./pic/photo-1598103586054-c4b456cbddc4-removebg-preview.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position-y: center;
 }
 #about div div {
   width: 50%;
