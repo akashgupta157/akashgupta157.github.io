@@ -57,7 +57,7 @@ if (mobile.matches || tablet.matches) {
   github.setAttribute("data-aos", "fade-right");
 }
 function NewTab() {
-  window.open("Aakash-Gupta-Resume.pdf", "_blank");
+  window.open("Resume.pdf", "_blank");
   click.checked = false;
   hbo.style.display = "flex";
   hbc.style.display = "none";
