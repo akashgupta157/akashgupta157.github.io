@@ -2,26 +2,31 @@
 #home {
   height: 100vh;
 }
+
 #about div div,
 .project-card {
   text-align: justify;
   display: flex;
 }
+
 #home button,
 #home p,
 #home span,
 .nav-list a {
   font-weight: 600;
 }
+
 #home button,
 .icon a i,
 button {
   cursor: pointer;
 }
+
 #projectDes div a,
 .nav-list a {
   text-decoration: none;
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -33,19 +38,24 @@ button {
   -ms-user-select: none;
   user-select: none;
 }
+
 ::-webkit-scrollbar {
   width: 10px;
 }
+
 ::-webkit-scrollbar-track {
   background: #f1f1f1;
 }
+
 ::-webkit-scrollbar-thumb {
   background: #005aa7;
   border-radius: 10px;
 }
+
 ::-webkit-scrollbar-thumb:hover {
   background: #0163b8;
 }
+
 #nav-menu {
   height: 70px;
   position: fixed;
@@ -53,6 +63,7 @@ button {
   transition: background-color 0.3s ease-out;
   z-index: 10;
 }
+
 .nav-list {
   width: 50%;
   float: right;
@@ -62,6 +73,7 @@ button {
   height: 100%;
   align-items: center;
 }
+
 .nav-list a {
   font-size: larger;
   color: #0051fe;
@@ -70,32 +82,40 @@ button {
   padding: 5px;
   transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
+
 .nav-link:hover {
   box-shadow: inset 100px 0 0 0 #0051fe;
   color: #fff;
 }
+
 #nav-menu label {
   display: none;
 }
+
 #home {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
+
 #home span {
   font-size: 30px;
 }
+
 #home h1 {
   font-size: 64px;
 }
+
 #home p {
   font-size: 25px;
 }
+
 #home div section {
   padding-top: 10px;
   display: flex;
   gap: 15px;
 }
+
 #home button {
   padding: 13px 29px;
   border-radius: 50px;
@@ -104,12 +124,14 @@ button {
   background-color: #fac000;
   border: 0;
 }
+
 #resume-link-2 button {
   display: flex;
   gap: 10px;
   background-color: #ceebfe;
   color: #005aab;
 }
+
 #home img {
   width: 35%;
   animation-name: floating;
@@ -117,18 +139,23 @@ button {
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
 }
+
 @keyframes floating {
+
   0%,
   100% {
     transform: translate(0, 0);
   }
+
   50% {
     transform: translate(0, 15px);
   }
 }
+
 #about {
   padding: 90px;
 }
+
 #about h2,
 #contact h2,
 #projects h2,
@@ -138,6 +165,7 @@ button {
   font-size: 32px;
   padding: 10px;
 }
+
 #about h2::before,
 #contact h2::before,
 #projects h2::before,
@@ -152,47 +180,58 @@ button {
   transition: 0.5s;
   animation: 3s linear infinite clippath;
 }
+
 @keyframes clippath {
+
   0%,
   100% {
     clip-path: inset(0 0 95% 0);
   }
+
   25% {
     clip-path: inset(0 95% 0 0);
   }
+
   50% {
     clip-path: inset(95% 0 0 0);
   }
+
   75% {
     clip-path: inset(0 0 0 95%);
   }
 }
-#about > div {
+
+#about>div {
   height: 90%;
   display: flex;
   align-items: center;
   gap: 10%;
 }
+
 #about img {
   width: 35%;
 }
+
 #about div div {
   width: 50%;
   flex-direction: column;
   gap: 20px;
   font-size: 20px;
 }
+
 #cardGroup {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   overflow: hidden;
 }
+
 #contact,
 #projects,
 #skills {
   padding: 90px;
   overflow: hidden;
 }
+
 .skills-card img {
   width: 65%;
   display: block;
@@ -201,40 +240,45 @@ button {
   height: 200px;
   object-fit: contain;
 }
+
 .skills-card h3 {
   text-align: center;
   font-size: 25px;
 }
+
 .project-card img {
   width: 40%;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
+
 #projectDes {
   width: 50%;
 }
+
 .project-card {
   justify-content: space-between;
   padding: 35px 15px;
   margin-top: 20px;
-  &:hover {
-    /* background-color: #505e7d; */
-  }
 }
+
 .project-card h3 {
   text-align: center;
   font-size: 30px;
 }
+
 .project-description {
   padding-top: 5px;
   font-size: 20px;
 }
+
 .project-tech-stack {
   padding-top: 10px;
   font-size: 18px;
 }
+
 .project-tech-stack b {
   font-size: 20px;
 }
+
 .project-deployed-link,
 .project-github-link {
   padding: 10px 15px;
@@ -247,32 +291,40 @@ button {
   color: #fff;
   background-color: orange;
 }
-#extra{
+
+#extra {
   display: flex;
   justify-content: center;
 }
+
 #c1 p,
 .fa-arrow-up-right-from-square {
   font-size: 15px;
 }
+
 #contact {
   display: flex;
   justify-content: space-between;
   padding: 0 80px 30px;
   background-color: #dde4fb;
 }
+
 #c1 {
   padding-top: 100px;
 }
+
 #c1 h2 {
   margin-bottom: 20px;
 }
+
 #c1 p {
   padding-bottom: 10px;
 }
+
 #social p {
   padding-top: 50px;
 }
+
 .icon a i {
   font-size: 35px;
   margin-right: 15px;
@@ -280,17 +332,21 @@ button {
   transition: 0.4s;
   color: #000;
 }
+
 .icon i:hover {
   transform: rotate(0) skew(0) translate(0, -10px);
 }
+
 #c2 {
   padding-top: 60px;
 }
+
 #c2 form {
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
+
 #c2 form input {
   width: 300px;
   height: 60px;
@@ -299,6 +355,7 @@ button {
   border-radius: 10px;
   border: 2px solid #030c33;
 }
+
 #c2 form textarea {
   font-size: 20px;
   padding-left: 5px;
@@ -306,6 +363,7 @@ button {
   border-radius: 10px;
   border: 2px solid #030c33;
 }
+
 #c2 form button {
   width: 50%;
   margin: auto;
@@ -318,46 +376,57 @@ button {
   border-radius: 10px;
   cursor: pointer;
 }
+
 #projectDes div {
   display: flex;
   justify-content: center;
 }
+
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .nav-list {
     width: 60%;
   }
+
   .nav-list a {
     font-size: large;
   }
+
   .project-card {
     padding: 30px 10px;
-    border: 1px solid red;
   }
+
   .project-card img {
     object-fit: contain;
   }
+
   #projectDes {
     width: 55%;
   }
 }
+
 @media screen and (max-width: 768px) {
+
   .nav-link:hover,
   .nav-list a {
     box-shadow: none;
   }
+
   .project-card img,
   .skills-card img {
     display: block;
     width: 60%;
     margin: auto;
   }
+
   #about div div,
   .project-description {
     font-size: 18px;
   }
+
   #nav-menu {
     border: 0;
   }
+
   .nav-list {
     position: fixed;
     height: 50%;
@@ -368,75 +437,92 @@ button {
     transition: 3s;
     background-color: #9cf;
   }
+
   .nav-link:hover {
     color: currentColor;
   }
+
   #nav-menu label {
     display: flex;
     float: right;
   }
+
   #hbc,
   #hbo {
     width: 35px;
     margin: 10px 10px 0 0;
     cursor: pointer;
   }
+
   #hbc {
     display: none;
   }
-  #click:checked ~ .nav-list {
+
+  #click:checked~.nav-list {
     top: 50px;
     transition: 1s;
   }
+
   #home {
     flex-direction: column-reverse;
     justify-content: flex-end;
     padding: 30px;
     gap: 30px;
   }
+
   #about img,
   #home img {
     width: 45%;
   }
+
   #home span {
     font-size: 20px;
     font-weight: 600;
   }
+
   #home h1 {
     font-size: 45px;
   }
+
   #home p {
     font-size: 30px;
     font-weight: 700;
   }
+
   #about,
   #contact,
   #projects,
   #skills {
     padding: 20px;
   }
-  #about > div {
+
+  #about>div {
     height: 100%;
     flex-direction: column;
     gap: 5%;
   }
+
   #about div div {
     width: 90%;
     flex-direction: column;
     gap: 10px;
   }
+
   #c2 form input,
   #c2 form textarea {
     width: 250px;
     font-size: 20px;
     padding-left: 5px;
   }
+
   #cardGroup {
     grid-template-columns: repeat(3, 1fr);
   }
+
   .skills-card img {
     padding: 20px;
   }
+
   .project-card {
     flex-direction: column;
     justify-content: space-between;
@@ -444,81 +530,99 @@ button {
     padding-top: 20px;
     text-align: justify;
   }
+
   .project-card:nth-child(odd) {
     flex-direction: column-reverse;
   }
+
   #projectDes {
     width: 90%;
     margin: auto;
     padding-top: 15px;
     padding-bottom: 15px;
   }
+
   .project-card h3 {
     font-size: 26px;
   }
+
   .project-deployed-link,
   .project-github-link {
     font-size: 16px;
   }
-  #extra{
+
+  #extra {
     display: grid;
     gap: 20px;
   }
-  #extra img{
+
+  #extra img {
     width: 70%;
     display: block;
     margin: auto;
   }
+
   #c1 {
     width: 50%;
     padding-top: 50px;
   }
+
   #c2 form input {
     height: 60px;
     border-radius: 10px;
     border: 2px solid #030c33;
   }
+
   #c2 form textarea {
     padding-top: 10px;
     border-radius: 10px;
     border: 2px solid #030c33;
   }
 }
+
 @media screen and (max-width: 480px) {
+
   #c1,
   #home button,
   #home img,
   .skills-card img {
     width: 100%;
   }
+
   #c2 form input,
   #c2 form textarea {
     margin: auto;
     width: 300px;
     padding-left: 5px;
   }
+
   #home {
     justify-content: center;
     gap: 30px;
     padding-top: 0;
   }
+
   #home span {
     font-size: 18px;
     font-weight: 600;
   }
+
   #home h1 {
     font-size: 40px;
   }
+
   #home p {
     font-size: 20px;
     font-weight: 700;
   }
+
   #home div section {
     padding-top: 10px;
     display: flex;
     flex-direction: column;
     gap: 15px;
   }
+
   #resume-link-2 button {
     display: flex;
     gap: 10px;
@@ -526,103 +630,129 @@ button {
     color: #005aab;
     justify-content: center;
   }
+
   #about {
     padding: 15px;
   }
+
   #about h2,
   #projects h2,
   #skills h2 {
     font-size: 28px;
   }
-  #about > div {
+
+  #about>div {
     height: 85%;
     flex-direction: column;
     justify-content: center;
   }
+
   #about div div,
   #contact {
     flex-direction: column;
   }
+
   #about div div {
     width: 90%;
     gap: 10px;
     font-size: 16px;
   }
+
   #c2 form input,
   .skills-card h3 {
     font-size: 18px;
   }
+
   #about img {
     width: 80%;
   }
+
   #skills {
     height: max-content;
   }
+
   .project-card img {
     width: 90%;
   }
+
   .project-title {
     display: flex;
     flex-direction: column;
   }
+
   #c1 {
     padding-top: 10px;
   }
+
   #social p {
     padding-top: 20px;
   }
+
   #c2 {
     padding-top: 30px;
   }
+
   #c2 form {
     display: flex;
     flex-direction: column;
     gap: 15px;
   }
+
   #c2 form input {
     height: 50px;
     border-radius: 10px;
     border: 2px solid #030c33;
   }
+
   #c2 form textarea {
     font-size: 18px;
     padding-top: 10px;
     border-radius: 10px;
     border: 2px solid #030c33;
   }
-  #extra{
+
+  #extra {
     display: grid;
     gap: 20px;
   }
-  #extra img{
+
+  #extra img {
     width: 90%;
     display: block;
     margin: auto;
   }
 }
+
 @media screen and (max-width: 320px) {
+
   #c2 form input,
   #c2 form textarea {
     margin: auto;
     width: 250px;
     padding-left: 5px;
   }
+
   #home {
     padding-top: 80px;
   }
+
   #home h1 {
     font-size: 32px;
   }
+
   #c2 form input,
   #home p {
     font-size: 18px;
   }
+
   #cardGroup {
     grid-template-columns: repeat(2, 1fr);
   }
+
   #skills {
     height: max-content;
   }
+
   .project-deployed-link,
   .project-github-link {
     padding: 5px 15px;
@@ -635,14 +765,17 @@ button {
     color: #fff;
     background-color: orange;
   }
+
   .fa-arrow-up-right-from-square {
     font-size: 14px;
   }
+
   #c2 form input {
     height: 50px;
     border-radius: 10px;
     border: 2px solid #030c33;
   }
+
   #c2 form textarea {
     font-size: 18px;
     padding-top: 10px;
