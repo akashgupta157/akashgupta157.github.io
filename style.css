@@ -141,7 +141,6 @@ button {
 }
 
 @keyframes floating {
-
   0%,
   100% {
     transform: translate(0, 0);
@@ -182,7 +181,6 @@ button {
 }
 
 @keyframes clippath {
-
   0%,
   100% {
     clip-path: inset(0 0 95% 0);
@@ -201,7 +199,7 @@ button {
   }
 }
 
-#about>div {
+#about > div {
   height: 90%;
   display: flex;
   align-items: center;
@@ -248,6 +246,9 @@ button {
 
 .project-card img {
   width: 40%;
+  object-fit: contain;
+  border: 1px solid #000;
+  height: fit-content;
 }
 
 #projectDes {
@@ -405,7 +406,6 @@ button {
 }
 
 @media screen and (max-width: 768px) {
-
   .nav-link:hover,
   .nav-list a {
     box-shadow: none;
@@ -458,7 +458,7 @@ button {
     display: none;
   }
 
-  #click:checked~.nav-list {
+  #click:checked ~ .nav-list {
     top: 50px;
     transition: 1s;
   }
@@ -496,7 +496,7 @@ button {
     padding: 20px;
   }
 
-  #about>div {
+  #about > div {
     height: 100%;
     flex-direction: column;
     gap: 5%;
@@ -581,7 +581,6 @@ button {
 }
 
 @media screen and (max-width: 480px) {
-
   #c1,
   #home button,
   #home img,
@@ -641,7 +640,7 @@ button {
     font-size: 28px;
   }
 
-  #about>div {
+  #about > div {
     height: 85%;
     flex-direction: column;
     justify-content: center;
@@ -724,7 +723,6 @@ button {
 }
 
 @media screen and (max-width: 320px) {
-
   #c2 form input,
   #c2 form textarea {
     margin: auto;
